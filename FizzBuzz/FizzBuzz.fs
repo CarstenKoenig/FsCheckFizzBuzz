@@ -2,8 +2,8 @@
 
 module FizzBuzzer = 
 
-    let (|DivBy|_|) d zahl =
-        if zahl % d = 0 then Some () else None
+    let (|DivBy|_|) d number =
+        if number % d = 0 then Some () else None
 
     let fizzBuzz n = 
         match n with

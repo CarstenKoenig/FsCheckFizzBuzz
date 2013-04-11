@@ -31,13 +31,13 @@ module DataGeneratorTests =
 
 
     [<Test>]
-    let ``generated multiples of 3 are 0 mod 3``() =
+    let ``generated integers by arbitraryMultiplesOf 3 are 0 mod 3``() =
         checkGeneratorFor 3
 
     [<Test>]
-    let ``generated multiples of 5 are 0 mod 5``() =
+    let ``generated integers by arbitraryMultiplesOf 5 are 0 mod 5``() =
         checkGeneratorFor 3
 
     [<Test>]
-    let ``generated integers not multiples of 3 and 5 are not divisible by 3 nor 5``() =
+    let ``generated integers by arbitraryNotMultiplesOf [3;5] are not divisible by 3 nor 5``() =
         checkGeneratorForNonMultiplesOf [3; 5]
